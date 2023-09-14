@@ -7,10 +7,10 @@ const Navbar = () => {
   const {currentUser} = useContext(AuthContext) //Getting Current User Detail with the useContext function
   return (
     <div className='navbar'>
-        <span className="logo">SEE Chat</span>
+        <span className="logo">Chat Karo</span>
         <div className="user">
             <img src={currentUser.photoURL} alt="" />  {/*Accessing Each Value that is present in the user Detail */}
-            <span>{currentUser.displayName}</span>
+            <span >{currentUser.displayName}</span>
             <button onClick={()=>signOut(auth)}>Logout</button>
         </div>
     </div>
